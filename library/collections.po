@@ -2,27 +2,27 @@
 # Copyright (C) 2001-2022, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-01-25 23:17+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: library/collections.rst:2
 msgid ":mod:`collections` --- Container datatypes"
-msgstr ""
+msgstr ":mod:`collections` --- Konteyner veri tipleri"
 
 #: library/collections.rst:10
 msgid "**Source code:** :source:`Lib/collections/__init__.py`"
-msgstr ""
+msgstr "**Kaynak Kod:** :source:`Lib/collections/__init__.py`"
 
 #: library/collections.rst:20
 msgid ""
@@ -30,82 +30,95 @@ msgid ""
 "alternatives to Python's general purpose built-in containers, :class:"
 "`dict`, :class:`list`, :class:`set`, and :class:`tuple`."
 msgstr ""
+"Bu modül :class:`dict`, :class:`list`, :class:`set`, and :class:`tuple` gibi "
+"Python'ın genel amaçlı yerleşik konteynerlerine alternatif sağlayan "
+"özelleştirilmiş veri tipleri uygular."
 
 #: library/collections.rst:25
 msgid ":func:`namedtuple`"
-msgstr ""
+msgstr ":func:`namedtuple`"
 
 #: library/collections.rst:25
 msgid "factory function for creating tuple subclasses with named fields"
 msgstr ""
+"isimlendirilmiş alanlarla demet alt sınıfları oluşturmak için fabrika "
+"fonksiyonu"
 
 #: library/collections.rst:26
 msgid ":class:`deque`"
-msgstr ""
+msgstr ":class:`deque`"
 
 #: library/collections.rst:26
 msgid "list-like container with fast appends and pops on either end"
 msgstr ""
+"iki uçtan da hızlı ekleme ve çıkarma yapmak için liste benzeri konteyner"
 
 #: library/collections.rst:27
 msgid ":class:`ChainMap`"
-msgstr ""
+msgstr ":class:`ChainMap`"
 
 #: library/collections.rst:27
 msgid "dict-like class for creating a single view of multiple mappings"
 msgstr ""
+"çoklu eşlemelerin tek bir görüntüsünü oluşturmak için sözlük benzeri sınıf"
 
 #: library/collections.rst:28
 msgid ":class:`Counter`"
-msgstr ""
+msgstr ":class:`Counter`"
 
 #: library/collections.rst:28
 msgid "dict subclass for counting hashable objects"
-msgstr ""
+msgstr "hashlenebilir nesneleri saymak için bir sözlük alt sınıfı"
 
 #: library/collections.rst:29
 msgid ":class:`OrderedDict`"
-msgstr ""
+msgstr ":class:`OrderedDict`"
 
 #: library/collections.rst:29
 msgid "dict subclass that remembers the order entries were added"
-msgstr ""
+msgstr "girdilerin eklenme sırasını aklında tutan sözlük alt sınıfı"
 
 #: library/collections.rst:30
 msgid ":class:`defaultdict`"
-msgstr ""
+msgstr ":class:`defaultdict`"
 
 #: library/collections.rst:30
 msgid "dict subclass that calls a factory function to supply missing values"
 msgstr ""
+"eksik değerleri sağlamak için bir fabrika fonksiyonu çağıran sözlük alt "
+"sınıfı"
 
 #: library/collections.rst:31
 msgid ":class:`UserDict`"
-msgstr ""
+msgstr ":class:`UserDict`"
 
 #: library/collections.rst:31
 msgid "wrapper around dictionary objects for easier dict subclassing"
 msgstr ""
+"daha kolay kütüphane alt sınıflandırması için sözlük nesnelerinin etrafına "
+"sarıcı"
 
 #: library/collections.rst:32
 msgid ":class:`UserList`"
-msgstr ""
+msgstr ":class:`UserList`"
 
 #: library/collections.rst:32
 msgid "wrapper around list objects for easier list subclassing"
 msgstr ""
+"daha kolay liste alt sınıflandırması için liste nesnelerinin etrafına sarıcı"
 
 #: library/collections.rst:33
 msgid ":class:`UserString`"
-msgstr ""
+msgstr ":class:`UserString`"
 
 #: library/collections.rst:33
 msgid "wrapper around string objects for easier string subclassing"
 msgstr ""
+"daha kolay dize alt sınıflandırması için dize nesnelerinin etrafına sarıcı"
 
 #: library/collections.rst:38
 msgid ":class:`ChainMap` objects"
-msgstr ""
+msgstr ":class:`ChainMap` objects"
 
 #: library/collections.rst:42
 msgid ""
@@ -114,11 +127,17 @@ msgid ""
 "than creating a new dictionary and running multiple :meth:`~dict.update` "
 "calls."
 msgstr ""
+"Bir :class:`ChainMap` sınıfı, tek bir birim olarak ele alınabilmeleri için "
+"bir dizi eşlemeyi hızlı bir şekilde bağlamak için sağlanmıştır.  Genellikle "
+"yeni bir sözlük oluşturmaktan ve birden fazla :meth:`~dict.update` çağrısı "
+"çalıştırmaktan çok daha hızlıdır."
 
 #: library/collections.rst:46
 msgid ""
 "The class can be used to simulate nested scopes and is useful in templating."
 msgstr ""
+"Sınıf, iç içe geçmiş kapsamları simüle etmek için kullanılabilir ve "
+"şablonlamada kullanışlıdır."
 
 #: library/collections.rst:50
 msgid ""
@@ -127,12 +146,19 @@ msgid ""
 "empty dictionary is provided so that a new chain always has at least one "
 "mapping."
 msgstr ""
+"Bir :class:`ChainMap`, tek bir güncellenebilir görünüm oluşturmak için "
+"birden fazla sözlüğü veya diğer eşlemeleri bir araya getirir.  Hiçbir *maps* "
+"belirtilmezse, yeni bir zincirin her zaman en az bir eşlemeye sahip olması "
+"için tek bir boş sözlük sağlanır."
 
 #: library/collections.rst:54
 msgid ""
 "The underlying mappings are stored in a list.  That list is public and can "
 "be accessed or updated using the *maps* attribute.  There is no other state."
 msgstr ""
+"Temel eşlemeler bir listede saklanır.  Bu liste herkese açıktır ve *maps* "
+"niteliği kullanılarak erişilebilir veya güncellenebilir.  Başka bir durum "
+"yoktur."
 
 #: library/collections.rst:57
 msgid ""
@@ -140,6 +166,9 @@ msgid ""
 "In contrast, writes, updates, and deletions only operate on the first "
 "mapping."
 msgstr ""
+"Arama işlemleri, bir anahtar bulunana kadar altta yatan eşlemeleri art arda "
+"arar.  Buna karşılık, yazma, güncelleme ve silme işlemleri yalnızca ilk "
+"eşleme üzerinde çalışır."
 
 #: library/collections.rst:60
 msgid ""
@@ -147,6 +176,9 @@ msgid ""
 "if one of the underlying mappings gets updated, those changes will be "
 "reflected in :class:`ChainMap`."
 msgstr ""
+"Bir :class:`ChainMap` temel eşlemeleri referans olarak içerir.  Dolayısıyla, "
+"temel eşlemelerden biri güncellenirse, bu değişiklikler :class:`ChainMap` "
+"içine yansıtılacaktır."
 
 #: library/collections.rst:64
 msgid ""
@@ -154,6 +186,9 @@ msgid ""
 "*maps* attribute, a method for creating new subcontexts, and a property for "
 "accessing all but the first mapping:"
 msgstr ""
+"Tüm olağan sözlük yöntemleri desteklenmektedir.  Ek olarak, bir *maps* "
+"niteliği, yeni alt bağlamlar oluşturmak için bir yöntem ve ilk eşleme "
+"dışındaki tüm eşlemelere erişmek için bir özellik vardır:"
 
 #: library/collections.rst:70
 msgid ""
@@ -162,8 +197,13 @@ msgid ""
 "which mappings are searched.  The list should always contain at least one "
 "mapping."
 msgstr ""
+"Kullanıcı tarafından güncellenebilir bir eşleme listesi.  Liste ilk "
+"aranandan son aranana doğru sıralanır.  Saklanan tek durumdur ve hangi "
+"eşlemelerin aranacağını değiştirmek için düzenlenebilir.  Liste her zaman en "
+"az bir eşleme içermelidir."
 
 #: library/collections.rst:77
+#, fuzzy
 msgid ""
 "Returns a new :class:`ChainMap` containing a new map followed by all of the "
 "maps in the current instance.  If ``m`` is specified, it becomes the new map "
@@ -173,14 +213,22 @@ msgid ""
 "or new empty dict. This method is used for creating subcontexts that can be "
 "updated without altering values in any of the parent mappings."
 msgstr ""
+"Geçerli örnekteki tüm eşlemeleri izleyen yeni bir eşleme içeren yeni bir :"
+"class:`ChainMap` döndürür.  Eğer ``m`` belirtilmişse, eşlemeler listesinin "
+"önündeki yeni eşleme olur; belirtilmemişse, boş bir sözlük kullanılır, "
+"böylece ``d.new_child()`` çağrısı ``ChainMap({}, *d.maps)`` 'a eşdeğerdir. "
+"Herhangi bir anahtar kelime argümanı belirtilirse, bunlar geçirilen haritayı "
+"veya yeni boş sözlüğü günceller. Bu yöntem, herhangi bir üst eşlemedeki "
+"değerleri değiştirmeden güncellenebilen alt bağlamlar oluşturmak için "
+"kullanılır."
 
 #: library/collections.rst:86
 msgid "The optional ``m`` parameter was added."
-msgstr ""
+msgstr "Opsiyonel ``m`` parametresi eklendi."
 
 #: library/collections.rst:89
 msgid "Keyword arguments support was added."
-msgstr ""
+msgstr "Anahtar kelime argümanları desteği eklendi."
 
 #: library/collections.rst:94
 msgid ""
@@ -197,16 +245,21 @@ msgid ""
 "Note, the iteration order of a :class:`ChainMap()` is determined by scanning "
 "the mappings last to first::"
 msgstr ""
+"Not, :class:`ChainMap()` 'in yineleme sırası, eşlemelerin sondan başa doğru "
+"taranmasıyla belirlenir::"
 
 #: library/collections.rst:110
 msgid ""
 "This gives the same ordering as a series of :meth:`dict.update` calls "
 "starting with the last mapping::"
 msgstr ""
+"Bu, son eşleme ile başlayan bir dizi :meth:`dict.update` çağrısı ile aynı "
+"sıralamayı verir::"
 
 #: library/collections.rst:118
 msgid "Added support for ``|`` and ``|=`` operators, specified in :pep:`584`."
 msgstr ""
+":pep:`584` ile belirtilen ``|`` ve ``|=`` operatörleri artık destekleniyor."
 
 #: library/collections.rst:123
 msgid ""
@@ -231,37 +284,52 @@ msgid ""
 "has options to control whether writes and other mutations apply only to the "
 "first mapping or to any mapping in the chain."
 msgstr ""
+"`İç İçe Bağlamlar tarifi <https://code.activestate.com/recipes/577434/>`_, "
+"yazma ve diğer değişikliklerin yalnızca ilk eşlemeye mi yoksa zincirdeki "
+"herhangi bir eşlemeye mi uygulanacağını kontrol etmek için seçeneklere "
+"sahiptir."
 
 #: library/collections.rst:141
+#, fuzzy
 msgid ""
 "A `greatly simplified read-only version of Chainmap <https://code."
 "activestate.com/recipes/305268/>`_."
 msgstr ""
+"`Chainmap <https://code.activestate.com/recipes/305268/>_ 'in büyük ölçüde "
+"basitleştirilmiş salt okunur sürümü`."
 
 #: library/collections.rst:146
 msgid ":class:`ChainMap` Examples and Recipes"
-msgstr ""
+msgstr ":class:`ChainMap` Örnek ve Tarifleri"
 
 #: library/collections.rst:148
 msgid "This section shows various approaches to working with chained maps."
 msgstr ""
+"Bu bölümde zincirleme haritalarla çalışmaya yönelik çeşitli yaklaşımlar "
+"gösterilmektedir."
 
 #: library/collections.rst:151
 msgid "Example of simulating Python's internal lookup chain::"
-msgstr ""
+msgstr "Python'un dahili arama zincirini simüle etme örneği::"
 
 #: library/collections.rst:156
+#, fuzzy
 msgid ""
 "Example of letting user specified command-line arguments take precedence "
 "over environment variables which in turn take precedence over default "
 "values::"
 msgstr ""
+"Kullanıcı tarafından belirtilen komut satırı argümanlarının ortam "
+"değişkenlerine göre öncelikli olmasına ve bunun da varsayılan değerlere göre "
+"öncelikli olmasına izin verme örneği::"
 
 #: library/collections.rst:173
 msgid ""
 "Example patterns for using the :class:`ChainMap` class to simulate nested "
 "contexts::"
 msgstr ""
+"İç içe geçmiş bağlamları simüle etmek amacıyla :class:`ChainMap` sınıfını "
+"kullanmak için örnek modeller::"
 
 #: library/collections.rst:192
 msgid ""
@@ -273,13 +341,15 @@ msgstr ""
 
 #: library/collections.rst:223
 msgid ":class:`Counter` objects"
-msgstr ""
+msgstr ":class:`Counter` nesneleri"
 
 #: library/collections.rst:225
 msgid ""
 "A counter tool is provided to support convenient and rapid tallies. For "
 "example::"
 msgstr ""
+"Uygun ve hızlı sayımları desteklemek için bir sayaç aracı sağlanmıştır. "
+"Örneğin::"
 
 #: library/collections.rst:244
 msgid ""
@@ -295,18 +365,24 @@ msgid ""
 "Elements are counted from an *iterable* or initialized from another "
 "*mapping* (or counter):"
 msgstr ""
+"Elemanlar bir *iterable* 'dan sayılır veya başka bir *mapping* 'den (veya "
+"sayaçtan) başlatılır:"
 
 #: library/collections.rst:258
 msgid ""
 "Counter objects have a dictionary interface except that they return a zero "
 "count for missing items instead of raising a :exc:`KeyError`:"
 msgstr ""
+"Sayaç nesneleri, eksik öğeler için :exc:`KeyError` oluşturmak yerine sıfır "
+"sayısı döndürmeleri dışında bir sözlük arayüzüne sahiptir:"
 
 #: library/collections.rst:265
 msgid ""
 "Setting a count to zero does not remove an element from a counter. Use "
 "``del`` to remove it entirely:"
 msgstr ""
+"Bir sayacı sıfıra ayarlamak bir elemanı sayaçtan kaldırmaz. Tamamen "
+"kaldırmak için ``del`` kullanın:"
 
 #: library/collections.rst:273
 msgid ""
@@ -488,7 +564,7 @@ msgstr ""
 
 #: library/collections.rst:450
 msgid ":class:`deque` objects"
-msgstr ""
+msgstr ":class:`deque` nesneleri"
 
 #: library/collections.rst:454
 msgid ""
@@ -530,11 +606,11 @@ msgstr ""
 
 #: library/collections.rst:481
 msgid "Add *x* to the right side of the deque."
-msgstr ""
+msgstr "Kuyruğun sağına *x* değerini ekler."
 
 #: library/collections.rst:486
 msgid "Add *x* to the left side of the deque."
-msgstr ""
+msgstr "Kuyruğun soluna *x* değerini ekler."
 
 #: library/collections.rst:491
 msgid "Remove all elements from the deque leaving it with length 0."
@@ -570,7 +646,7 @@ msgstr ""
 
 #: library/collections.rst:532
 msgid "Insert *x* into the deque at position *i*."
-msgstr ""
+msgstr "*i* konumundaki kuyruğa *x*'i ekleyin."
 
 #: library/collections.rst:534
 msgid ""
@@ -619,7 +695,7 @@ msgstr ""
 
 #: library/collections.rst:579
 msgid "Maximum size of a deque or ``None`` if unbounded."
-msgstr ""
+msgstr "Kuyruğun maksimum boyutunu veya sınır verilmemişse ``None`` döndürür."
 
 #: library/collections.rst:584
 msgid ""
@@ -629,20 +705,28 @@ msgid ""
 "to access the first element.  Indexed access is O(1) at both ends but slows "
 "to O(n) in the middle.  For fast random access, use lists instead."
 msgstr ""
+"Üsttekine ek olarak, kuyruklar yineleme, temizleme, ``len(d)``, "
+"``reversed(d)``, ``copy.copy(d)``, ``copy.deepcopy(d)``, :keyword:`in` "
+"operatörüyle üyelik testi, ve ilk elemente erişmek için ``d[0]`` gibi "
+"altsimge referanslarını destekler. Dizine alınmış erişim iki uçta da "
+"O(1)'dir ama ortada O(n)'e yavaşlar. Rastgele hızlı erişim için, bunun "
+"yerine listeleri kullanın."
 
 #: library/collections.rst:590
 msgid ""
 "Starting in version 3.5, deques support ``__add__()``, ``__mul__()``, and "
 "``__imul__()``."
 msgstr ""
+"Python 3.5'den itibaren, kuyruklar ``__add__()``, ``__mul__()``, ve "
+"``__imul__()`` 'i desteklerler."
 
 #: library/collections.rst:593
 msgid "Example:"
-msgstr ""
+msgstr "Örnek:"
 
 #: library/collections.rst:650
 msgid ":class:`deque` Recipes"
-msgstr ""
+msgstr ":class:`deque` tarifleri"
 
 #: library/collections.rst:652
 msgid "This section shows various approaches to working with deques."
@@ -689,7 +773,7 @@ msgstr ""
 
 #: library/collections.rst:715
 msgid ":class:`defaultdict` objects"
-msgstr ""
+msgstr ":class:`defaultdict` nesneleri"
 
 #: library/collections.rst:719
 msgid ""
@@ -1025,7 +1109,7 @@ msgstr ""
 
 #: library/collections.rst:1078
 msgid ":class:`OrderedDict` objects"
-msgstr ""
+msgstr ":class:`OrderedDict` nesneleri"
 
 #: library/collections.rst:1080
 msgid ""
@@ -1037,7 +1121,7 @@ msgstr ""
 
 #: library/collections.rst:1086
 msgid "Some differences from :class:`dict` still remain:"
-msgstr ""
+msgstr ":class:`dict` 'in bazı farklılıkları hala devam ediyor:"
 
 #: library/collections.rst:1088
 msgid ""
@@ -1063,6 +1147,8 @@ msgstr ""
 msgid ""
 "The equality operation for :class:`OrderedDict` checks for matching order."
 msgstr ""
+":class:`OrderedDict` için eşitlik işlemi sıralamanın eşleşip eşleşmediğini "
+"kontrol eder."
 
 #: library/collections.rst:1101
 msgid ""
@@ -1112,12 +1198,16 @@ msgstr ""
 #: library/collections.rst:1125
 msgid "Until Python 3.8, :class:`dict` lacked a :meth:`__reversed__` method."
 msgstr ""
+"Python 3.8'e kadar, :class:`dict` sınıfının :meth:`__reversed__` metodu "
+"bulunmuyordu."
 
 #: library/collections.rst:1130
 msgid ""
 "Return an instance of a :class:`dict` subclass that has methods specialized "
 "for rearranging dictionary order."
 msgstr ""
+"Sözlük sırasını yeniden düzenlemek için özelleştirilmiş metotları bulunan "
+"bir :class:`dict` alt sınıfının örneğini döndürür."
 
 #: library/collections.rst:1137
 msgid ""
@@ -1126,6 +1216,10 @@ msgid ""
 "out)` order if *last* is true or :abbr:`FIFO (first-in, first-out)` order if "
 "false."
 msgstr ""
+"Sıralı sözlükler için :meth:`popitem` metodu bir (anahtar, değer) çifti "
+"döndürür ve kaldırır.  Çiftler, *last* doğru ise :abbr:`LIFO (last-in, first-"
+"out)` sırasına göre, yanlış ise :abbr:`FIFO (first-in, first-out)` sırasına "
+"göre döndürülür."
 
 #: library/collections.rst:1144
 msgid ""
@@ -1133,12 +1227,17 @@ msgid ""
 "moved to the right end if *last* is true (the default) or to the beginning "
 "if *last* is false.  Raises :exc:`KeyError` if the *key* does not exist:"
 msgstr ""
+"Sıralı bir sözlükte bulunan *key* 'i herhangi bir uca taşır. Eleman *last* "
+"değeri doğru ise sona, yanlış ise başa gider. Eğer *key* bulunmuyorsa, :exc:"
+"`KeyError` hatası ortaya çıkar::"
 
 #: library/collections.rst:1161
 msgid ""
 "In addition to the usual mapping methods, ordered dictionaries also support "
 "reverse iteration using :func:`reversed`."
 msgstr ""
+"Sıradan eşleştirme metotlarına ek olarak, sıralı sözlükler :func:`reversed` "
+"kullanarak ters yinelemeyi de destekler."
 
 #: library/collections.rst:1164
 msgid ""
@@ -1149,22 +1248,32 @@ msgid ""
 "allows :class:`OrderedDict` objects to be substituted anywhere a regular "
 "dictionary is used."
 msgstr ""
+":class:`OrderedDict` nesneleri arasındaki eşitlik testleri sıraya duyarlıdır "
+"ve ``list(od1.items())==list(od2.items())`` şeklinde uygulanır. :class:"
+"`OrderedDict` nesneleri ve diğer :class:`~collections.abc.Mapping` nesneleri "
+"arasındaki eşitlik testleri, normal sözlükler gibi sıraya duyarsızdır.  Bu, :"
+"class:`OrderedDict` nesnelerinin normal bir sözlüğün kullanıldığı her yere "
+"yerleştirilebilmesini sağlar."
 
 #: library/collections.rst:1171
 msgid ""
 "The items, keys, and values :term:`views <dictionary view>` of :class:"
 "`OrderedDict` now support reverse iteration using :func:`reversed`."
 msgstr ""
+":class:`OrderedDict` öğeleri, anahtarları ve :term:`views <dictionary view>` "
+"değerleri artık :func:`reversed` kullanılarak ters yinelemeyi destekliyor."
 
 #: library/collections.rst:1175
 msgid ""
 "With the acceptance of :pep:`468`, order is retained for keyword arguments "
 "passed to the :class:`OrderedDict` constructor and its :meth:`update` method."
 msgstr ""
+":pep:`468` kabulüyle, :class:`OrderedDict` kurucusuna ve :meth:`update` "
+"metoduna aktarılan anahtar sözcük argümanları için sıra korunur."
 
 #: library/collections.rst:1185
 msgid ":class:`OrderedDict` Examples and Recipes"
-msgstr ""
+msgstr ":class:`OrderedDict` Örnek ve Tarifleri"
 
 #: library/collections.rst:1187
 msgid ""
@@ -1182,7 +1291,7 @@ msgstr ""
 
 #: library/collections.rst:1297
 msgid ":class:`UserDict` objects"
-msgstr ""
+msgstr ":class:`UserDict` nesneleri"
 
 #: library/collections.rst:1299
 msgid ""
@@ -1206,15 +1315,19 @@ msgid ""
 "In addition to supporting the methods and operations of mappings, :class:"
 "`UserDict` instances provide the following attribute:"
 msgstr ""
+"Eşlemelerin metot ve işlemlerini desteklemenin yanı sıra, :class:`UserDict` "
+"örnekleri aşağıdaki özniteliği sağlar:"
 
 #: library/collections.rst:1318
 msgid ""
 "A real dictionary used to store the contents of the :class:`UserDict` class."
 msgstr ""
+":class:`UserDict` sınıfının içeriğini saklamak için kullanılan gerçek bir "
+"sözlük."
 
 #: library/collections.rst:1324
 msgid ":class:`UserList` objects"
-msgstr ""
+msgstr ":class:`UserList` nesneleri"
 
 #: library/collections.rst:1326
 msgid ""
@@ -1251,6 +1364,8 @@ msgid ""
 "A real :class:`list` object used to store the contents of the :class:"
 "`UserList` class."
 msgstr ""
+"Gerçek bir :class:`list` nesnesi, :class:`UserList` sınıfının içeriğini "
+"saklamak için kullanılır."
 
 #: library/collections.rst:1351
 msgid ""
@@ -1272,7 +1387,7 @@ msgstr ""
 
 #: library/collections.rst:1364
 msgid ":class:`UserString` objects"
-msgstr ""
+msgstr ":class:`UserString` nesneleri"
 
 #: library/collections.rst:1366
 msgid ""
@@ -1281,6 +1396,10 @@ msgid ""
 "directly from :class:`str`; however, this class can be easier to work with "
 "because the underlying string is accessible as an attribute."
 msgstr ""
+":class:`UserString` sınıfı dize nesneleri etrafında bir sarmalayıcı görevi "
+"görür. Bu sınıfa duyulan ihtiyaç, doğrudan :class:`str` sınıfından alt sınıf "
+"oluşturma yeteneği ile kısmen giderilmiştir; ancak, bu sınıfla çalışmak daha "
+"kolay olabilir çünkü altta yatan dizeye bir nitelik olarak erişilebilir."
 
 #: library/collections.rst:1374
 msgid ""
@@ -1296,15 +1415,21 @@ msgid ""
 "In addition to supporting the methods and operations of strings, :class:"
 "`UserString` instances provide the following attribute:"
 msgstr ""
+"Dizelerin metotlarını ve işlemlerini desteklemenin yanı sıra, :class:"
+"`UserString` örnekleri aşağıdaki niteliği sağlar:"
 
 #: library/collections.rst:1386
 msgid ""
 "A real :class:`str` object used to store the contents of the :class:"
 "`UserString` class."
 msgstr ""
+"Gerçek bir :class:`str` nesnesi :class:`UserString` sınıfının içeriğini "
+"saklamak için kullanılır."
 
 #: library/collections.rst:1389
 msgid ""
 "New methods ``__getnewargs__``, ``__rmod__``, ``casefold``, ``format_map``, "
 "``isprintable``, and ``maketrans``."
 msgstr ""
+"Yeni ``__getnewargs__``, ``__rmod__``, ``casefold``, ``format_map``, "
+"``isprintable`` ve ``maketrans`` metotları."
