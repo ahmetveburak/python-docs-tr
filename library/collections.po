@@ -60,7 +60,7 @@ msgstr ":class:`ChainMap`"
 #: library/collections.rst:27
 msgid "dict-like class for creating a single view of multiple mappings"
 msgstr ""
-"çoklu eşlemelerin tek bir görüntüsünü oluşturmak için sözlük benzeri sınıf"
+"birden fazla eşlemenin tek bir görünümünü oluşturan sözlük benzeri bir sınıf"
 
 #: library/collections.rst:28
 msgid ":class:`Counter`"
@@ -76,7 +76,7 @@ msgstr ":class:`OrderedDict`"
 
 #: library/collections.rst:29
 msgid "dict subclass that remembers the order entries were added"
-msgstr "girdilerin eklenme sırasını aklında tutan sözlük alt sınıfı"
+msgstr "girdilerin eklenme sırasını hatırlayan sözlük alt sınıfı"
 
 #: library/collections.rst:30
 msgid ":class:`defaultdict`"
@@ -95,7 +95,7 @@ msgstr ":class:`UserDict`"
 #: library/collections.rst:31
 msgid "wrapper around dictionary objects for easier dict subclassing"
 msgstr ""
-"daha kolay kütüphane alt sınıflandırması için sözlük nesnelerinin etrafına "
+"daha kolay sözlük alt sınıflandırması için sözlük nesnelerinin etrafına "
 "sarıcı"
 
 #: library/collections.rst:32
@@ -118,7 +118,7 @@ msgstr ""
 
 #: library/collections.rst:38
 msgid ":class:`ChainMap` objects"
-msgstr ":class:`ChainMap` objects"
+msgstr ":class:`ChainMap` nesneleri"
 
 #: library/collections.rst:42
 msgid ""
@@ -127,16 +127,16 @@ msgid ""
 "than creating a new dictionary and running multiple :meth:`~dict.update` "
 "calls."
 msgstr ""
-"Bir :class:`ChainMap` sınıfı, tek bir birim olarak ele alınabilmeleri için "
-"bir dizi eşlemeyi hızlı bir şekilde bağlamak için sağlanmıştır.  Genellikle "
-"yeni bir sözlük oluşturmaktan ve birden fazla :meth:`~dict.update` çağrısı "
-"çalıştırmaktan çok daha hızlıdır."
+":class:`ChainMap` sınıfı birden fazla eşlemenin hızlıca linklenmesi için "
+"sağlanmıştır, böylece eşlemeler tek bir birim gibi davranabilmektedir. "
+"Genellikle boş bir sözlük oluşturup yinelenen :meth:`~dict.update` çağrıları "
+"yapmaktan çok daha hızlıdır."
 
 #: library/collections.rst:46
 msgid ""
 "The class can be used to simulate nested scopes and is useful in templating."
 msgstr ""
-"Sınıf, iç içe geçmiş kapsamları simüle etmek için kullanılabilir ve "
+"Sınıf, iç içe kapsamları simüle etmek için kullanılabilir ve "
 "şablonlamada kullanışlıdır."
 
 #: library/collections.rst:50
@@ -146,10 +146,10 @@ msgid ""
 "empty dictionary is provided so that a new chain always has at least one "
 "mapping."
 msgstr ""
-"Bir :class:`ChainMap`, tek bir güncellenebilir görünüm oluşturmak için "
-"birden fazla sözlüğü veya diğer eşlemeleri bir araya getirir.  Hiçbir *maps* "
-"belirtilmezse, yeni bir zincirin her zaman en az bir eşlemeye sahip olması "
-"için tek bir boş sözlük sağlanır."
+"Bir :class:`ChainMap` tek bir güncellenebilir görünüm oluşturmak için birden "
+"fazla sözlük veya diğer eşlemeleri gruplar. Eğer bir *eşleme* belirtilmezse, "
+"boş bir sözlük ile yeni zincirin her zaman en az bir eşlemeye sahip olması "
+"sağlanır."
 
 #: library/collections.rst:54
 msgid ""
@@ -166,8 +166,8 @@ msgid ""
 "In contrast, writes, updates, and deletions only operate on the first "
 "mapping."
 msgstr ""
-"Arama işlemleri, bir anahtar bulunana kadar altta yatan eşlemeleri art arda "
-"arar.  Buna karşılık, yazma, güncelleme ve silme işlemleri yalnızca ilk "
+"Arama işlemleri, bir anahtar bulunana kadar alt eşlemelerin her birini art "
+"arda arar.  Buna karşılık, yazma, güncelleme ve silme işlemleri yalnızca ilk "
 "eşleme üzerinde çalışır."
 
 #: library/collections.rst:60
@@ -176,9 +176,9 @@ msgid ""
 "if one of the underlying mappings gets updated, those changes will be "
 "reflected in :class:`ChainMap`."
 msgstr ""
-"Bir :class:`ChainMap` temel eşlemeleri referans olarak içerir.  Dolayısıyla, "
-"temel eşlemelerden biri güncellenirse, bu değişiklikler :class:`ChainMap` "
-"içine yansıtılacaktır."
+"Bir :class:`ChainMap` alt eşlemelerini birer referans olarak içerir. "
+"Dolayısıyla eğer alt eşlemelerden biri güncellenirse, yapılan değişiklikler :"
+"class:`ChainMap` 'e de yansıtılır."
 
 #: library/collections.rst:64
 msgid ""
@@ -203,7 +203,6 @@ msgstr ""
 "az bir eşleme içermelidir."
 
 #: library/collections.rst:77
-#, fuzzy
 msgid ""
 "Returns a new :class:`ChainMap` containing a new map followed by all of the "
 "maps in the current instance.  If ``m`` is specified, it becomes the new map "
