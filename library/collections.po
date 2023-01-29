@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-17 01:28+0300\n"
-"PO-Revision-Date: 2023-01-27 23:44+0300\n"
+"PO-Revision-Date: 2023-01-29 23:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: TURKISH <python.docs.tr@gmail.com>\n"
 "Language: tr\n"
@@ -401,12 +401,19 @@ msgid ""
 "encountered in the left operand and then by the order encountered in the "
 "right operand."
 msgstr ""
+":class:`Counter` sınıfı, bir :class:`dict` alt sınıfı olarak ekleme sırasını "
+"hatırlama özelliğini miras almıştır. *Counter* nesneleriyle yapılan "
+"matematiksel işlemler de sırasını korur. Sonuçlar bir elemanın sol işlenende "
+"ilk karşılaşıldığı zamana ve ardından sağ işlenende karşılaşıldığı sıraya "
+"göre sıralanır."
 
 #: library/collections.rst:279
 msgid ""
 "Counter objects support additional methods beyond those available for all "
 "dictionaries:"
 msgstr ""
+"Counter nesneleri, sözlüklerin mevcut yöntemlerinin haricinde ek metotları "
+"da desteklemektedir."
 
 #: library/collections.rst:284
 msgid ""
@@ -414,6 +421,9 @@ msgid ""
 "Elements are returned in the order first encountered. If an element's count "
 "is less than one, :meth:`elements` will ignore it."
 msgstr ""
+"Her elemanın sayısı kadar kendini tekrar ettiği bir yineleyici döndürür. "
+"Elemanlar ilk karşılaşıldığı sıraya göre döndürülür. Eğer bir elemanın "
+"sayısı birden azsa, :meth:`elements` onu yok sayar."
 
 #: library/collections.rst:294
 msgid ""
@@ -422,6 +432,10 @@ msgid ""
 "returns *all* elements in the counter. Elements with equal counts are "
 "ordered in the order first encountered:"
 msgstr ""
+"En yaygın *n* öğenin ve bunların en yaygından en aza doğru sayılarının bir "
+"listesini döndürür. Eğer *n* atlanırsa veya ``None`` ise, :meth:"
+"`most_common` sayaçtaki *tüm* elemanları döndürür. Sayıları eşit olan "
+"elemanlar ilk karşılaşılan sıraya göre sıralanır:"
 
 #: library/collections.rst:304
 msgid ""
@@ -429,6 +443,9 @@ msgid ""
 "counter).  Like :meth:`dict.update` but subtracts counts instead of "
 "replacing them.  Both inputs and outputs may be zero or negative."
 msgstr ""
+"Elemanlar bir *yinelenebilir* den veya başka bir *eşlemeden*den (veya "
+"sayaçtan) çıkarılır. :meth:`dict.update` gibi, ancak sayıları değiştirmek "
+"yerine çıkarır. Girdiler ve çıktıların ikisi de sıfır veya negatif olabilir."
 
 #: library/collections.rst:318
 msgid "Compute the sum of the counts."
@@ -473,7 +490,7 @@ msgstr ""
 
 #: library/collections.rst:353
 msgid "Common patterns for working with :class:`Counter` objects::"
-msgstr ""
+msgstr ":class:`Counter` nesneleri ile çalışmak için yaygın kalıplar::"
 
 #: library/collections.rst:365
 msgid ""
@@ -485,17 +502,28 @@ msgid ""
 "corresponding counts.  Each operation can accept inputs with signed counts, "
 "but the output will exclude results with counts of zero or less."
 msgstr ""
+":class:`Counter` nesnelerini birleştirerek çoklu kümeler (sıfırdan büyük "
+"sayılara sahip sayaçlar) üretmek için çeşitli matematiksel işlemler "
+"sağlanmıştır. Toplama ve çıkarma, karşılık gelen elemanların sayılarını "
+"toplayarak veya çıkararak sayaçları birleştirir.  Kesişim ve birleşim, "
+"karşılık gelen sayıların minimum ve maksimumunu döndürür.  Eşitlik ve dahil "
+"etme karşılık gelen sayıları karşılaştırır.  Her işlem işaretli sayılara "
+"sahip girdileri kabul edebilir, ancak çıktı sıfır veya daha az sayılara "
+"sahip sonuçları hariç tutacaktır."
 
 #: library/collections.rst:390
 msgid ""
 "Unary addition and subtraction are shortcuts for adding an empty counter or "
 "subtracting from an empty counter."
 msgstr ""
+"Tekli toplama ve çıkarma, boş bir sayaç eklemek veya boş bir sayaçtan "
+"çıkarmak için kullanılan kısayollardır."
 
 #: library/collections.rst:399
 msgid ""
 "Added support for unary plus, unary minus, and in-place multiset operations."
 msgstr ""
+"Tekli artı, tekli eksi ve yerinde çoklu küme işlemleri için destek eklendi."
 
 #: library/collections.rst:404
 msgid ""
@@ -504,6 +532,11 @@ msgid ""
 "cases needing other types or negative values.  To help with those use cases, "
 "this section documents the minimum range and type restrictions."
 msgstr ""
+"Sayaçlar öncelikle çalışan sayıları temsil etmek için pozitif tamsayılarla "
+"çalışmak üzere tasarlanmıştır; ancak, diğer türlere veya negatif değerlere "
+"ihtiyaç duyan kullanım durumlarını gereksiz yere engellememeye özen "
+"gösterilmiştir.  Bu kullanım durumlarına yardımcı olmak için, bu bölüm "
+"minimum aralık ve tür kısıtlamalarını belgelemektedir."
 
 #: library/collections.rst:409
 msgid ""
